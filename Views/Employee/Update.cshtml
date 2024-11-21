@@ -1,0 +1,27 @@
+@model EmployeeDto
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>title</h2>
+<form method="post">
+    
+    <div>
+        <label asp-for="EmpName"></label>
+
+        <input type="text" asp-for="EmpName" />
+    </div>
+
+    <div>
+        <label asp-for="Designation"></label>
+        <input type="text" asp-for="Designation" />
+    </div>
+
+    
+    
+
+    <button type="submit">Update</button>
+</form>
+

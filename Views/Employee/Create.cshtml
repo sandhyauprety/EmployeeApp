@@ -1,0 +1,27 @@
+@model EmployeeVm
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>title</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-5">
+            <form class="form-control"method="post">
+
+                <input type="text" asp-for="EmpName" class="form-control" placeholder="Enter employee name"/>
+                <input type="text" asp-for="Designation" class="form-control" placeholder="Enter  designation"/>
+                
+                <input type="text" asp-for="Address" class="form-check-input" placeholder="Enter address"/>
+                <button type="submit" class="btn btn-primary">Submit</button>
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
